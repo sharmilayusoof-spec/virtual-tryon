@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendTry - GlamFit | AI Virtual Try-On</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👗</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1 class="logo">TRENDTRY <span class="brand-accent">GLAMFIT</span></h1>
+                <p class="tagline">Dress how you want to be addressed</p>
+                <p class="subtitle">AI-powered virtual try-ons for the modern wardrobe. See the fit, feel the confidence, before you buy.</p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#try-on" class="nav-link active">Try-On</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Why TrendTry - GlamFit?</h2>
+                <p class="hero-text">Online shopping shouldn't feel like a gamble. Sizes differ, fits surprise, and returns pile up. TrendTry - GlamFit lets you preview outfits on your own photo, combining pose detection, smart segmentation, and cloth warping to create a realistic try-on experience.</p>
+                <button class="btn btn-hero" onclick="document.getElementById('try-on').scrollIntoView({behavior: 'smooth'})">
+                    START TRY-ON
+                </button>
+                <div class="hero-badge">
+                    <span class="badge-text">AI FIT • LIVE PREVIEW</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="try-on">
+        <div class="container">
+            
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Step 1: Upload Your Photo</h2>
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p class="upload-text">Drag & drop your photo here</p>
+                        <p class="upload-subtext">or click to browse</p>
+                        <input type="file" id="userImageInput" accept="image/*" hidden>
+                    </div>
+                    <div class="preview-container" id="userPreview" style="display: none;">
+                        <img id="userImage" alt="User preview">
+                        <button class="remove-btn" id="removeUserImage">×</button>
+                    </div>
+                </div>
+                
+                <!-- Camera Option -->
+                <div class="camera-section">
+                    <button class="btn btn-secondary" id="cameraBtn">
+                        📷 Use Camera
+                    </button>
+                    <div class="camera-container" id="cameraContainer" style="display: none;">
+                        <video id="cameraVideo" autoplay playsinline></video>
+                        <canvas id="cameraCanvas" style="display: none;"></canvas>
+                        <div class="camera-controls">
+                            <button class="btn btn-primary" id="captureBtn">Capture Photo</button>
+                            <button class="btn btn-secondary" id="closeCameraBtn">Close Camera</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cloth Selection Section -->
+            <section class="cloth-section">
+                <h2>Step 2: Select Clothing & Size</h2>
+                
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="tshirt">T-Shirts</button>
+                    <button class="filter-btn" data-category="shirt">Shirts</button>
+                    <button class="filter-btn" data-category="dress">Dresses</button>
+                    <button class="filter-btn" data-category="jacket">Jackets</button>
+                </div>
+
+                <!-- Cloth Grid -->
+                <div class="cloth-grid" id="clothGrid">
+                    <!-- Cloth items will be loaded here -->
+                </div>
+
+                <!-- Custom Upload -->
+                <div class="custom-upload">
+                    <button class="btn btn-outline" id="customClothBtn">
+                        + Upload Custom Cloth
+                    </button>
+                    <input type="file" id="customClothInput" accept="image/*" hidden>
+                </div>
+            </section>
+
+            <!-- Size Selection Modal -->
+            <div class="size-modal" id="sizeModal" style="display: none;">
+                <div class="size-modal-content">
+                    <button class="size-modal-close" id="closeSizeModal">×</button>
+                    <h3 class="size-modal-title">Select Your Size</h3>
+                    <div class="size-chart" id="sizeChart">
+                        <!-- Size chart will be populated here -->
+                    </div>
+                    <div class="size-buttons" id="sizeButtons">
+                        <!-- Size buttons will be populated here -->
+                    </div>
+                    <button class="btn btn-primary" id="confirmSize">Confirm Size</button>
+                </div>
+            </div>
+
+            <!-- Try-On Button -->
+            <section class="action-section">
+                <!-- API Quality Toggle -->
+                <div class="quality-toggle" style="margin-bottom: 1.5rem; text-align: center;">
+                    <label style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1rem; color: white; cursor: pointer;">
+                        <input type="checkbox" id="useAPIToggle" style="width: 20px; height: 20px; cursor: pointer;">
+                        <span>Use Enhanced Quality (Recommended)</span>
+                    </label>
+                    <p style="color: #b0b0b0; font-size: 0.9rem; margin-top: 0.5rem;">
+                        Enhanced mode uses improved algorithm for better results
+                    </p>
+                </div>
+                
+                <button class="btn btn-primary btn-large" id="tryOnBtn" disabled>
+                    ✨ Try On Now
+                </button>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section" id="resultSection" style="display: none;">
+                <h2>Your Try-On Result</h2>
+                
+                <!-- View Mode Selector -->
+                <div class="view-mode-selector">
+                    <button class="view-btn" data-mode="result">Result Only</button>
+                    <button class="view-btn active" data-mode="compare">Side-by-Side</button>
+                </div>
+
+                <!-- Result Display -->
+                <div class="result-display">
+                    <div class="result-container" id="resultContainer">
+                        <canvas id="resultCanvas"></canvas>
+                    </div>
+                </div>
+
+                <!-- Result Actions -->
+                <div class="result-actions">
+                    <button class="btn btn-primary" id="downloadBtn">
+                        ⬇️ Download
+                    </button>
+                    <button class="btn btn-secondary" id="shareBtn">
+                        🔗 Share
+                    </button>
+                    <button class="btn btn-outline" id="tryAgainBtn">
+                        🔄 Try Again
+                    </button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Processing your try-on...</p>
+        <p class="loading-subtext">Analyzing pose and fitting garment</p>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

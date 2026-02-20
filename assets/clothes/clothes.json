@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "name": "Coral Summer Dress",
+    "category": "dress",
+    "image": "dress12.png",
+    "description": "Beautiful coral summer dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "36", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "37", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "38", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "39", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Burgundy Evening Gown",
+    "category": "dress",
+    "image": "dress13.png",
+    "description": "Elegant burgundy evening gown",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "58", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "59", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "60", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "61", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Black Evening Dress",
+    "category": "dress",
+    "image": "dress1.png",
+    "description": "Elegant black evening dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "38", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "39", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "40", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "41", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Denim Jacket",
+    "category": "jacket",
+    "image": "jacket1.png",
+    "description": "Classic denim jacket",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "24", "shoulder": "17", "sleeve": "24" },
+      "M": { "chest": "40-42", "length": "25", "shoulder": "18", "sleeve": "25" },
+      "L": { "chest": "44-46", "length": "26", "shoulder": "19", "sleeve": "26" },
+      "XL": { "chest": "48-50", "length": "27", "shoulder": "20", "sleeve": "27" }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mint Green Midi Dress",
+    "category": "dress",
+    "image": "dress14.png",
+    "description": "Fresh mint green midi dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "42", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "43", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "44", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "45", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Peach Cocktail Dress",
+    "category": "dress",
+    "image": "dress15.png",
+    "description": "Stylish peach cocktail dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "35", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "36", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "37", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "38", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 7,
+    "name": "Summer Floral Dress",
+    "category": "dress",
+    "image": "dress2.png",
+    "description": "Light summer floral dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "36", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "37", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "38", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "39", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 8,
+    "name": "Leather Jacket",
+    "category": "jacket",
+    "image": "jacket2.png",
+    "description": "Black leather jacket",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "24", "shoulder": "17", "sleeve": "24" },
+      "M": { "chest": "40-42", "length": "25", "shoulder": "18", "sleeve": "25" },
+      "L": { "chest": "44-46", "length": "26", "shoulder": "19", "sleeve": "26" },
+      "XL": { "chest": "48-50", "length": "27", "shoulder": "20", "sleeve": "27" }
+    }
+  },
+  {
+    "id": 9,
+    "name": "Red A-Line Dress",
+    "category": "dress",
+    "image": "dress3.png",
+    "description": "Elegant red A-line dress perfect for parties",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "37", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "38", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "39", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "40", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Blue Maxi Dress",
+    "category": "dress",
+    "image": "dress4.png",
+    "description": "Flowing blue maxi dress for casual wear",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "52", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "53", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "54", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "55", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 11,
+    "name": "Pink Cocktail Dress",
+    "category": "dress",
+    "image": "dress5.png",
+    "description": "Stylish pink cocktail dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "35", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "36", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "37", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "38", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 12,
+    "name": "White Lace Dress",
+    "category": "dress",
+    "image": "dress6.png",
+    "description": "Beautiful white lace dress for special occasions",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "36", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "37", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "38", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "39", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 13,
+    "name": "Navy Blue Formal Dress",
+    "category": "dress",
+    "image": "dress7.png",
+    "description": "Professional navy blue formal dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "38", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "39", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "40", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "41", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 14,
+    "name": "Green Wrap Dress",
+    "category": "dress",
+    "image": "dress8.png",
+    "description": "Flattering green wrap dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "37", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "38", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "39", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "40", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 15,
+    "name": "Yellow Sundress",
+    "category": "dress",
+    "image": "dress9.png",
+    "description": "Bright yellow sundress for summer",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "34", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "35", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "36", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "37", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 16,
+    "name": "Purple Evening Gown",
+    "category": "dress",
+    "image": "dress10.png",
+    "description": "Elegant purple evening gown",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "56", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "57", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "58", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "59", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 17,
+    "name": "Floral Midi Dress",
+    "category": "dress",
+    "image": "dress11.png",
+    "description": "Beautiful floral print midi dress",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "waist": "26-28", "length": "42", "hip": "36-38" },
+      "M": { "bust": "36-38", "waist": "30-32", "length": "43", "hip": "40-42" },
+      "L": { "bust": "40-42", "waist": "34-36", "length": "44", "hip": "44-46" },
+      "XL": { "bust": "44-46", "waist": "38-40", "length": "45", "hip": "48-50" }
+    }
+  },
+  {
+    "id": 18,
+    "name": "Black Blazer",
+    "category": "jacket",
+    "image": "blazer1.png",
+    "description": "Professional black blazer",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "34-36", "length": "26", "shoulder": "16", "sleeve": "23" },
+      "M": { "bust": "38-40", "length": "27", "shoulder": "17", "sleeve": "24" },
+      "L": { "bust": "42-44", "length": "28", "shoulder": "18", "sleeve": "25" },
+      "XL": { "bust": "46-48", "length": "29", "shoulder": "19", "sleeve": "26" }
+    }
+  },
+  {
+    "id": 19,
+    "name": "Casual Blouse",
+    "category": "shirt",
+    "image": "blouse1.png",
+    "description": "Comfortable casual blouse",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "length": "24", "shoulder": "15" },
+      "M": { "bust": "36-38", "length": "25", "shoulder": "16" },
+      "L": { "bust": "40-42", "length": "26", "shoulder": "17" },
+      "XL": { "bust": "44-46", "length": "27", "shoulder": "18" }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Silk Top",
+    "category": "shirt",
+    "image": "top1.png",
+    "description": "Elegant silk top",
+    "gender": "women",
+    "sizes": {
+      "S": { "bust": "32-34", "length": "23", "shoulder": "14" },
+      "M": { "bust": "36-38", "length": "24", "shoulder": "15" },
+      "L": { "bust": "40-42", "length": "25", "shoulder": "16" },
+      "XL": { "bust": "44-46", "length": "26", "shoulder": "17" }
+    }
+  },
+  {
+    "id": 21,
+    "name": "Classic Shirt",
+    "category": "shirt",
+    "image": "shirt1.png",
+    "description": "Professional classic shirt for formal occasions",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "28", "shoulder": "16", "sleeve": "24" },
+      "M": { "chest": "40-42", "length": "29", "shoulder": "17", "sleeve": "25" },
+      "L": { "chest": "44-46", "length": "30", "shoulder": "18", "sleeve": "26" },
+      "XL": { "chest": "48-50", "length": "31", "shoulder": "19", "sleeve": "27" }
+    }
+  },
+  {
+    "id": 22,
+    "name": "Casual Shirt",
+    "category": "shirt",
+    "image": "shirt2.png",
+    "description": "Comfortable casual shirt for everyday wear",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "27", "shoulder": "16", "sleeve": "23" },
+      "M": { "chest": "40-42", "length": "28", "shoulder": "17", "sleeve": "24" },
+      "L": { "chest": "44-46", "length": "29", "shoulder": "18", "sleeve": "25" },
+      "XL": { "chest": "48-50", "length": "30", "shoulder": "19", "sleeve": "26" }
+    }
+  },
+  {
+    "id": 23,
+    "name": "Cotton T-Shirt",
+    "category": "tshirt",
+    "image": "tshirt1.png",
+    "description": "Comfortable cotton t-shirt for casual wear",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "26", "shoulder": "16" },
+      "M": { "chest": "40-42", "length": "27", "shoulder": "17" },
+      "L": { "chest": "44-46", "length": "28", "shoulder": "18" },
+      "XL": { "chest": "48-50", "length": "29", "shoulder": "19" }
+    }
+  },
+  {
+    "id": 24,
+    "name": "Graphic T-Shirt",
+    "category": "tshirt",
+    "image": "tshirt2.png",
+    "description": "Stylish graphic print t-shirt",
+    "gender": "unisex",
+    "sizes": {
+      "S": { "chest": "36-38", "length": "26", "shoulder": "16" },
+      "M": { "chest": "40-42", "length": "27", "shoulder": "17" },
+      "L": { "chest": "44-46", "length": "28", "shoulder": "18" },
+      "XL": { "chest": "48-50", "length": "29", "shoulder": "19" }
+    }
+  }
+]
